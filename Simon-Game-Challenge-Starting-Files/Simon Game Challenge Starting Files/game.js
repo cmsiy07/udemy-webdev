@@ -24,7 +24,7 @@ function nextSequence(){
   playSound(randomChosenColour);
 }
 
-$('.btn').click(function(){
+$('.btn').on("click", function(){
   var userChosenColour = $(this).attr("id");
   userClickedPattern.push(userChosenColour);
 
